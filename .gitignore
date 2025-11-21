@@ -1,37 +1,128 @@
-# Environment variables (contains API keys)
-.env
+# ============================================
+# Git Ignore for CMPT 419 Project
+# Keep only essential files for instructor
+# ============================================
 
-# Virtual environment
-venv/
-env/
-ENV/
+# ===== System Files =====
+.DS_Store
+._.DS_Store
+**/.DS_Store
+*.swp
+*.swo
+*~
 
-# Python cache
+# ===== Python Cache =====
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
+.Python
+env/
+venv/
+ENV/
+.venv
 
-# Distribution / packaging
-dist/
-build/
-*.egg-info/
-
-# Output data
-*.jsonl
-output/
-data/raw/
-Jupiter/
-
-# IDE
+# ===== IDE Files =====
 .vscode/
 .idea/
-*.swp
-*.swo
+*.sublime-*
+.cursor/
 
-# Output data from generateDate.py
+# ===== Colab Files (Not needed for GitHub) =====
+COLAB_*.md
+COLAB_*.txt
+COLAB_*.py
+*_Colab.ipynb
+
+# ===== Chinese Documentation (For personal use only) =====
+*中文*.md
+咨询老师*.md
+实验报告模板.md
+核心概念*.md
+评估方法*.md
+选择评估*.md
+严格评估*.md
+📊*.md
+📈*.md
+📋*.md
+🚀*.md
+✅*.md
+✨*.md
+
+# ===== Temporary/Internal Files =====
+EMAIL_TO_INSTRUCTOR.md
+QUICK_SUMMARY_1PAGE.md
+FILES_CREATED.md
+READY_TO_UPLOAD.md
+USE_800_THREADS.md
+PROJECT_GUIDE.md
+prepare_data.sh
+quick_start.sh
+generate_independent_test.sh
+quality_check.py
+pii_mask.py
+
+# ===== Compressed Data (Too large for GitHub) =====
+*.tar.gz
+*.zip
+*.7z
+
+# ===== Large Data Files (Optional: host elsewhere) =====
+data/raw/
+data/working/
+data/output/
 output/
+*.jsonl
+!data/sample.jsonl
+
+# ===== Model Files (Too large) =====
+models/
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# ===== Results/Cache =====
+results/
+.cache/
+*.csv
+*.png
+*.jpg
+
+# ===== Logs =====
+*.log
+logs/
+
+# ===== Environment Files =====
+.env
+.env.local
+*.key
+api_keys.txt
+
+# ===== Backup Files =====
+*_backup*
+*_old*
+*_test*
+*.bak
+
+/DATA_PREPARATION_REPORT.md
+/FINAL_REPORT_EN.md
+/FINAL_REPORT.pdf
+/FINAL_REPORT.docx
+/FINAL_REPORT.doc
+/FINAL_REPORT.txt
+/FINAL_REPORT.html
+/FINAL_REPORT.xml
+/FINAL_REPORT.json
+/FINAL_REPORT.yaml
+
+/eval_真实检索.md
+
+/GITHUB_SUBMISSION_GUIDE.md
+
+/PROJECT_SUMMARY_FOR_INSTRUCTOR.md
 
 
+/scripts/*
 
-
+/git_submit.sh
